@@ -23,6 +23,7 @@
                        Text="Diseñado por Sandra Hurtado"
                        FontSize="20" />
         </DockPanel>
+        <!---->
         <!--Panel verde de la derecha-->
         <Border BorderBrush="Black" 
                 BorderThickness="3"
@@ -52,11 +53,13 @@
                 </StackPanel>
             </DockPanel>
         </Border>
+        <!---->
         <!--Texto arriba-->
         <TextBlock DockPanel.Dock="Top"
                    Text="Visor de imágenes"
                    FontSize="40"
                    HorizontalAlignment="Center" />
+        <!---->
         <!--WrapPanel de las imágenes-->
         <WrapPanel>
             <Image Source="Assets/episodioIV.jpg"
