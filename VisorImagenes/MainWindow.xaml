@@ -9,6 +9,25 @@
         Icon="Assets/icon.ico"
         MinWidth="715"
         MinHeight="530">
+    <Window.Resources>
+        <!--Estilo para los textos-->
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Rubrik"/>
+        </Style>
+        <!--Estilo texto arriba título)-->
+        <Style TargetType="{x:Type TextBlock}"
+               x:Key="Titulo"
+               BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontSize"
+                    Value="40" />
+        </Style>
+        <!--Estilo para textos de abajo-->
+        <Style TargetType="TextBlock"
+               x:Key="PieVentana"
+               BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </Window.Resources>
     <DockPanel>
         <!--Panel azul de abajo-->
         <DockPanel LastChildFill="False"
@@ -16,12 +35,12 @@
                    Background="LightBlue"
                    Height="40"
                    Margin="10">
-            <TextBlock DockPanel.Dock="Left"
-                       Text="Nº de imágenes: 10"
-                       FontSize="20" />
-            <TextBlock DockPanel.Dock="Right"
-                       Text="Diseñado por Sandra Hurtado"
-                       FontSize="20" />
+            <TextBlock Style="{StaticResource PieVentana}"
+                DockPanel.Dock="Left"
+                       Text="Nº de imágenes: 10"/>
+            <TextBlock Style="{StaticResource PieVentana}"
+                DockPanel.Dock="Right"
+                       Text="Diseñado por Sandra Hurtado"/>
         </DockPanel>
         <!---->
         <!--Panel verde de la derecha-->
@@ -55,9 +74,9 @@
         </Border>
         <!---->
         <!--Texto arriba-->
-        <TextBlock DockPanel.Dock="Top"
+        <TextBlock Style="{StaticResource Titulo}"
+            DockPanel.Dock="Top"
                    Text="Visor de imágenes"
-                   FontSize="40"
                    HorizontalAlignment="Center" />
         <!---->
         <!--WrapPanel de las imágenes-->
