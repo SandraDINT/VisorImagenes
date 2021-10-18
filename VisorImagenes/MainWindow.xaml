@@ -55,6 +55,10 @@
             <Setter Property="Margin"
                     Value="10" />
         </Style>
+        <!--Estilo imagenes-->
+        <Style TargetType="Image">
+            <Setter Property="Width" Value="110"/>
+        </Style>
     </Window.Resources>
     <DockPanel>
         <!--Panel azul de abajo-->
@@ -100,26 +104,16 @@
         <!---->
         <!--WrapPanel de las imágenes-->
         <WrapPanel>
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
-            <Image Source="Assets/episodioIV.jpg"
-                   Width="110" />
+            <Image Source="Assets/episodioIV.jpg"/>
+            <Image Source="Assets/episodioIV.jpg"/>
+            <Image Source="Assets/episodioIV.jpg"/>
+            <Image Source="Assets/episodioIV.jpg"/>
+            <Image Source="Assets/episodioIV.jpg"/>
+            <Image Source="Assets/episodioIV.jpg"/>
+            <Image Source="Assets/episodioIV.jpg"/>
+            <Image Source="Assets/episodioIV.jpg"/>
+            <Image Source="Assets/episodioIV.jpg"/>
+            <Image Source="Assets/episodioIV.jpg"/>
         </WrapPanel>
     </DockPanel>
 </Window>
